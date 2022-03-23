@@ -42,7 +42,14 @@ namespace WordJumble
         {
             Console.Write("Предложение: ");
             string UserString = Console.ReadLine();
-            ReversWord(UserString);
+            if (UserString == "")
+            {
+                Console.WriteLine("Срока пустая. Пожалуйста, введите предложене.");
+            }
+            else
+            {
+                ReversWord(UserString);
+            }
 
             Console.ReadLine();
         }
